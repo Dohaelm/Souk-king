@@ -1,175 +1,221 @@
 products = [
     {
-        "name": "Handcrafted Carpet",
-        "description": "A beautifully woven carpet with intricate designs.",
-        "base_price": 30
+        "name": "Taous Plate",
+        "description": "A hand-painted ceramic plate from Fez, featuring traditional Moroccan motifs.",
+        "base_price": 35
     },
     {
-        "name": "Vintage Vase",
-        "description": "A rare porcelain vase from the 19th century.",
-        "base_price": 50
-    },
-    {
-        "name": "Antique Lamp",
-        "description": "A well-preserved lamp with a rich history.",
-        "base_price": 40
-    },
-    {
-        "name": "Silver Pocket Watch",
-        "description": "An elegant pocket watch with silver casing, dating back to the early 1900s.",
-        "base_price": 80
-    },
-    {
-        "name": "Leather Bound Journal",
-        "description": "A handmade journal with a luxurious leather cover and thick, high-quality paper.",
-        "base_price": 25
-    },
-    {
-        "name": "Crystal Decanter",
-        "description": "An exquisite crystal decanter perfect for storing fine spirits.",
+        "name": "Silver Teapot",
+        "description": "An ornate Moroccan silver teapot, perfect for brewing traditional mint tea.",
         "base_price": 60
     },
     {
-        "name": "Hand-Painted Plate",
-        "description": "A decorative plate featuring beautiful hand-painted floral designs.",
-        "base_price": 35
-    },
-    {
-        "name": "Brass Candle Holder",
-        "description": "A vintage brass candle holder with an intricate design.",
-        "base_price": 20
-    },
-    {
-        "name": "Marble Chess Set",
-        "description": "A luxury chess set with marble pieces and a polished stone board.",
-        "base_price": 150
-    },
-    {
-        "name": "Copper Tea Kettle",
-        "description": "A traditional copper kettle, perfect for boiling water or making tea.",
-        "base_price": 45
-    },
-    {
-        "name": "Wool Throw Blanket",
-        "description": "A soft, warm throw blanket made from high-quality wool.",
-        "base_price": 40
-    },
-    {
-        "name": "Bronze Sculpture",
-        "description": "A meticulously crafted bronze sculpture depicting a historical figure.",
-        "base_price": 120
-    },
-    {
-        "name": "Ceramic Teapot",
-        "description": "A delicate teapot made from fine ceramic, with a unique design.",
-        "base_price": 30
-    },
-    {
-        "name": "Vintage Record Player",
-        "description": "A nostalgic record player with vintage styling, perfect for vinyl lovers.",
-        "base_price": 100
-    },
-    {
-        "name": "Handcrafted Wooden Mirror",
-        "description": "A beautifully carved wooden mirror with an antique finish.",
-        "base_price": 75
-    },
-    {
-        "name": "Leather Wallet",
-        "description": "A slim, stylish wallet made from premium leather.",
-        "base_price": 35
-    },
-    {
-        "name": "Gold Plated Bracelet",
-        "description": "A delicate bracelet plated with 24K gold, perfect for everyday wear.",
-        "base_price": 70
-    },
-    {
-        "name": "Porcelain Tea Set",
-        "description": "An elegant tea set made from fine porcelain, featuring delicate floral patterns.",
-        "base_price": 55
-    },
-    {
-        "name": "Wooden Wine Rack",
-        "description": "A handcrafted wine rack made from solid oak wood, with space for 12 bottles.",
+        "name": "Rbati Carpet",
+        "description": "A luxurious handwoven carpet from Rabat, known for its geometric patterns and vibrant colors.",
         "base_price": 90
     },
     {
-        "name": "Antique Mirror",
-        "description": "A vintage mirror with an intricately designed frame and antique finish.",
-        "base_price": 110
-    },
-    {
-        "name": "Rattan Picnic Basket",
-        "description": "A classic picnic basket made from handwoven rattan, complete with utensils.",
-        "base_price": 40
-    },
-    {
-        "name": "Sculpted Wooden Figure",
-        "description": "A beautifully carved wooden figure, depicting a serene natural scene.",
-        "base_price": 60
-    },
-    {
-        "name": "Gold-Leaf Picture Frame",
-        "description": "An elegant picture frame with gold leaf detailing.",
-        "base_price": 50
-    },
-    {
-        "name": "Handcrafted Wooden Bowl",
-        "description": "A large, smooth wooden bowl, perfect for serving salads or as a decorative piece.",
-        "base_price": 30
-    },
-    {
-        "name": "Vintage Typewriter",
-        "description": "An old-fashioned typewriter with a classic design, perfect for collectors.",
-        "base_price": 80
-    },
-    {
-        "name": "Antique Book Collection",
-        "description": "A set of rare antique books, with beautifully aged leather covers.",
-        "base_price": 150
-    },
-    {
-        "name": "Embroidered Throw Pillow",
-        "description": "A decorative throw pillow with intricate embroidery.",
-        "base_price": 25
-    },
-    {
-        "name": "Ceramic Planter",
-        "description": "A beautifully glazed ceramic planter for indoor plants.",
-        "base_price": 20
-    },
-    {
-        "name": "Tiffany Style Lamp",
-        "description": "A vintage-style lamp with a Tiffany-inspired stained glass shade.",
+        "name": "Fassi Caftan",
+        "description": "An elegant traditional caftan from Fez, adorned with fine embroidery and golden thread.",
         "base_price": 120
     },
     {
-        "name": "Handmade Wool Hat",
-        "description": "A warm, cozy wool hat handmade for cold winter days.",
+        "name": "Virgin Argan Oil",
+        "description": "Pure, cold-pressed argan oil from the Souss region, prized for its cosmetic and culinary uses.",
+        "base_price": 50
+    },
+    {
+        "name": "Tadelakt Vase",
+        "description": "A smooth, waterproof vase made using the ancient Moroccan tadelakt technique.",
         "base_price": 45
     },
     {
-        "name": "Antique Wooden Chest",
-        "description": "A large, weathered wooden chest, perfect for storage or as a statement piece.",
-        "base_price": 100
+        "name": "Essaouira Wooden Box",
+        "description": "A handcrafted thuya wood box from Essaouira, with a fragrant cedar aroma and detailed inlay.",
+        "base_price": 40
     },
     {
-        "name": "Crystal Glassware Set",
-        "description": "A set of elegant crystal glasses, perfect for wine or cocktails.",
+        "name": "Zellige Mirror",
+        "description": "A decorative mirror framed with traditional zellige mosaic tiles from Fes.",
         "base_price": 70
     },
     {
-        "name": "Pressed Flower Art",
-        "description": "A unique piece of art featuring pressed flowers in a decorative frame.",
+        "name": "Berber Jewelry",
+        "description": "A striking piece of handmade Berber jewelry with silver and semi-precious stones.",
+        "base_price": 85
+    },
+    {
+        "name": "Moroccan Babouche Slippers",
+        "description": "Colorful leather slippers handcrafted in the souks of Marrakech.",
+        "base_price": 30
+    },
+    {
+        "name": "Hand-Beaten Copper Tray",
+        "description": "A traditional round copper tray, ideal for serving Moroccan tea.",
+        "base_price": 55
+    },
+    {
+        "name": "Palm Leaf Basket",
+        "description": "A handwoven basket made from palm leaves, used in Moroccan markets and homes.",
         "base_price": 25
     },
     {
-        "name": "Geometric Wall Clock",
-        "description": "A modern, geometric wall clock with a minimalist design.",
+        "name": "Fez Blue Bowl",
+        "description": "A ceramic bowl painted in classic Fez blue patterns by local artisans.",
+        "base_price": 35
+    },
+    {
+        "name": "Traditional Oud Perfume",
+        "description": "A rich and smoky Moroccan oud perfume in a vintage-style bottle.",
+        "base_price": 65
+    },
+    {
+        "name": "Tagine Pot",
+        "description": "A traditional clay tagine used to cook the famous slow-simmered Moroccan dishes.",
+        "base_price": 40
+    },
+    {
+        "name": "Camel Leather Pouf",
+        "description": "A handcrafted leather pouf made from camel hide, stitched and dyed in Marrakech.",
+        "base_price": 70
+    },
+    {
+        "name": "Handwoven Sabra Pillow",
+        "description": "A decorative pillow made from sabra silk with bold Berber patterns.",
+        "base_price": 30
+    },
+    {
+        "name": "Aker Fassi Lip Stain",
+        "description": "A natural lipstick made from poppy petals and pomegranate bark, used in Moroccan beauty rituals.",
+        "base_price": 20
+    },
+    {
+        "name": "Draa Valley Date Box",
+        "description": "A box of premium dates from the Draa Valley, a Moroccan desert delicacy.",
+        "base_price": 25
+    },
+    {
+        "name": "Moroccan Lantern",
+        "description": "A colorful glass and metal lantern casting warm light, often used in riads and patios.",
         "base_price": 50
+    },
+    {
+        "name": "Amlou Spread Jar",
+        "description": "A delicious almond, honey, and argan oil spread from southern Morocco.",
+        "base_price": 15
+    },
+    {
+        "name": "Traditional Henna Kit",
+        "description": "A full henna set with stencils and natural powder for ceremonial designs.",
+        "base_price": 25
+    },
+    {
+        "name": "Leather Saddle Bag",
+        "description": "A rustic, handmade Moroccan leather bag often used by nomads.",
+        "base_price": 60
+    },
+    {
+        "name": "Souss Olive Wood Utensils",
+        "description": "A set of kitchen utensils carved from dense, beautifully grained olive wood.",
+        "base_price": 20
+    },
+    {
+        "name": "Tifinagh Wall Art",
+        "description": "A decorative wall piece featuring the ancient Tifinagh script of the Amazigh people.",
+        "base_price": 45
+    },
+    {
+        "name": "Khmissa Keychain",
+        "description": "A keychain featuring the protective Hand of Fatima, or Khmissa, symbol.",
+        "base_price": 10
+    },
+    {
+        "name": "Desert Rose Stone",
+        "description": "A natural desert rose crystal formation found in the Moroccan Sahara.",
+        "base_price": 35
+    },
+    {
+        "name": "Cedarwood Incense Set",
+        "description": "A bundle of cedar incense sticks made from Atlas Mountain wood, with a carved burner.",
+        "base_price": 25
+    },
+    {
+        "name": "Moroccan Coffee Pot",
+        "description": "A hammered metal coffee pot traditionally used in northern Moroccan households.",
+        "base_price": 50
+    },
+    {
+        "name": "Sefrou Cherry Jam",
+        "description": "A jar of artisan cherry jam made in the town of Sefrou, known for its cherry festival.",
+        "base_price": 18
+    },
+    {
+        "name": "Rissani Fossil Plate",
+        "description": "A plate embedded with ancient fossils from the Rissani region near the Sahara.",
+        "base_price": 80
+    },
+    {
+        "name": "Atlas Wool Blanket",
+        "description": "A warm and thick wool blanket woven by Amazigh artisans in the High Atlas.",
+        "base_price": 55
+    },
+    {
+        "name": "Taroudant Ceramic Lamp",
+        "description": "A hand-carved ceramic lamp from Taroudant, with intricate patterns and soft light.",
+        "base_price": 65
+    },
+    {
+        "name": "Marrakech Spice Set",
+        "description": "A collection of traditional Moroccan spices, including cumin, paprika, and saffron.",
+        "base_price": 30
+    },
+    {
+        "name": "Saharan Sand Dune Jar",
+        "description": "A decorative glass jar filled with sand from the Moroccan Sahara, capturing the essence of the desert.",
+        "base_price": 25
+    },
+    {
+        "name": "Meknes Embroidered Tablecloth",
+        "description": "A beautifully embroidered tablecloth from Meknes, featuring delicate patterns and vibrant colors.",
+        "base_price": 45
+    },
+    {
+        "name": "Tassoult Leather Belt",
+        "description": "A hand-stitched leather belt crafted in the Moroccan town of Tassoult, featuring intricate designs.",
+        "base_price": 35
+    },
+    {
+        "name": "Ouarzazate Movie Poster",
+        "description": "A vintage poster from Ouarzazate, the film capital of Morocco, showcasing iconic scenes from famous films.",
+        "base_price": 25
+    },
+    {
+        "name": "Chefchaouen Wool Shawl",
+        "description": "A warm, handwoven shawl from the blue city of Chefchaouen, made with soft wool and bright hues.",
+        "base_price": 40
+    },
+    {
+        "name": "Ifrane Cedar Wood Box",
+        "description": "A beautifully crafted cedar wood box from Ifrane, known for its fresh air and dense forests.",
+        "base_price": 50
+    },
+    {
+        "name": "Sahara Camel Leather Journal",
+        "description": "A leather-bound journal made from camel leather, perfect for travelers and adventurers.",
+        "base_price": 60
+    },
+    {
+        "name": "Tangerine Blossom Honey",
+        "description": "A jar of fragrant honey harvested from tangerine blossoms in the fertile lands of Morocco.",
+        "base_price": 20
+    },
+    {
+        "name": "Moulay Idriss Coin Necklace",
+        "description": "A traditional necklace made with antique coins from the historic town of Moulay Idriss.",
+        "base_price": 55
     }
 ]
+
 clients = [
    
   {
