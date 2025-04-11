@@ -37,13 +37,17 @@ class SoukKingGame:
         self.ai_price = 0
         self.chosen_client = None
         self.transition_animation = Animation(0.1)
-        self.money_animation = Animation(1.0)
+        self.money_animation = Animation(1.0, sound = pygame.mixer.Sound("ui/sounds/money.wav"))
         self.old_user_money = self.user_money
         self.old_ai_money = self.ai_money
         self.given_price = 0
         self.client_cards = []
         self.winner = None
         self.round_winners = [None, None, None, None, None]
+        self.button_click_sound = pygame.mixer.Sound("ui/sounds/click.wav")
+        self.money_sound = pygame.mixer.Sound("ui/sounds/money.wav")
+        self.winning_sound = pygame.mixer.Sound("ui/sounds/clapping.wav")
+        self.loosing_sound = pygame.mixer.Sound("ui/sounds/fail.mp3")
         
         # Rules text
         self.rules = [
@@ -76,7 +80,8 @@ class SoukKingGame:
             200,
             60,
             "Start Game",
-            font=self.fonts['heading_font']
+            font=self.fonts['heading_font'],
+            click_sound = self.button_click_sound
         )
         
         # Rules screen button
@@ -86,7 +91,8 @@ class SoukKingGame:
             200,
             60,
             "Understood!",
-            font=self.fonts['heading_font']
+            font=self.fonts['heading_font'],
+            click_sound = self.button_click_sound
         )
         
         # Bidding UI
@@ -105,7 +111,8 @@ class SoukKingGame:
             200,
             60,
             "Place Bid",
-            font=self.fonts['heading_font']
+            font=self.fonts['heading_font'],
+            click_sound = self.button_click_sound
         )
         
         # Event/Results UI
@@ -115,7 +122,8 @@ class SoukKingGame:
             200,
             60,
             "Continue",
-            font=self.fonts['heading_font']
+            font=self.fonts['heading_font'],
+            click_sound = self.button_click_sound
         )
         
         # Game over UI
@@ -125,7 +133,8 @@ class SoukKingGame:
             300,
             60,
             "Play Again",
-            font=self.fonts['heading_font']
+            font=self.fonts['heading_font'],
+            click_sound = self.button_click_sound
         )
     
     def reset_game(self):
@@ -402,7 +411,7 @@ class SoukKingGame:
             # Single client centered
             x = (SCREEN_WIDTH - card_width) // 2
             y = 320  # Moved up from 400
-            card = ClientCard(x, y, card_width, card_height, self.selected_clients[0], 1, small_font=self.fonts['small_font'])
+            card = ClientCard(x, y, card_width, card_height, self.selected_clients[0], 1, small_font=self.fonts['small_font'], click_sound = self.button_click_sound)
             self.client_cards.append(card)
         elif len(self.selected_clients) == 2:
             # Two clients side by side
@@ -413,7 +422,7 @@ class SoukKingGame:
             
             for i, client in enumerate(self.selected_clients):
                 x = start_x + (i * (card_width + spacing))
-                card = ClientCard(x, y, card_width, card_height, client, i+1, small_font=self.fonts['small_font'])
+                card = ClientCard(x, y, card_width, card_height, client, i+1, small_font=self.fonts['small_font'], click_sound = self.button_click_sound)
                 self.client_cards.append(card)
         else:
             # Three clients in a horizontal row
@@ -874,7 +883,7 @@ class SoukKingGame:
                         # Start the money animation for adding the sale price to AI money
                         if hasattr(self, 'final_ai_money') and not hasattr(self, 'ai_sale_animation_started'):
                             self.old_ai_money = self.ai_money  # Current money (after bid subtracted)
-                            self.ai_sale_animation = Animation(1.0)
+                            self.ai_sale_animation = Animation(1.0, sound = self.money_sound)
                             self.ai_sale_animation.start()
                             self.ai_sale_animation_started = True
                 else:
@@ -1017,9 +1026,11 @@ class SoukKingGame:
         if self.user_money > self.ai_money:
             winner_text = self.fonts['title_font'].render("YOU WIN!", True, PLAYER_COLOR)
             self.winner = "player"
+            self.winning_sound.play()
         elif self.ai_money > self.user_money:
             winner_text = self.fonts['title_font'].render("AI WINS!", True, AI_COLOR)
             self.winner = "ai"
+            self.loosing_sound.play()
         else:
             winner_text = self.fonts['title_font'].render("IT'S A TIE!", True, HIGHLIGHT_COLOR)
             self.winner = "tie"
